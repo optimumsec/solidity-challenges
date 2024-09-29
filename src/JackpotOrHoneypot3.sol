@@ -8,7 +8,7 @@ interface IReceiver {
     function pullRewards() external;
 }
 // participants deposit 1 eth during the deposit phase which lasts 7 days.
-// After that, the first depositor to call payPrize will be able to claim the all previous deposits.
+// After that, the first depositor to call payPrize will be able to claim all the previous deposits.
 // The contract will clone a Receiver contract for the winner (by using ReceiverFactory which relies on the Clones
 // library)
 // and will send the prize to this address. The prize will be claimable only by the _owner defined during deposit.
